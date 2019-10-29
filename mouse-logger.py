@@ -7,6 +7,7 @@ NumberOfMouseClicks = 0
 def on_click(x, y, button, pressed):
     global NumberOfMouseClicks
     print(x, y)
+    print(button)
     NumberOfMouseClicks = NumberOfMouseClicks + 1
     if (NumberOfMouseClicks==10):
         raise MyException(button)
